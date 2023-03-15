@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 import Navbar from '../src/components/layout/navbar/Navbar'
 import Slogan from '../src/components/layout/Slogan'
+import IconImage from '../src/components/iconImage/IconImage'
 
 const StyledImage = styled.div`
   background-image: url('/Debbie_Balboa.gif');
@@ -71,6 +72,12 @@ const StyledDescriptionText = styled.p`
   line-height: 19px;
   text-justify: center;
 `
+const StyledLineIcons = styled.div`
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  gap: 10px;
+`
 
 export default function HomePage() {
   return (
@@ -92,6 +99,24 @@ export default function HomePage() {
             always looking forward to learning new technologies and overcome new challenges. Happy
             Happy to relocate for any great opportunity.
           </StyledDescriptionText>
+          <StyledLineIcons>
+            <IconImage imageName="typescript" type="svg" />
+            <IconImage imageName="javascript" type="svg" />
+            <IconImage imageName="html" type="svg" />
+            <IconImage imageName="css" type="svg" />
+          </StyledLineIcons>
+          <StyledLineIcons>
+            <IconImage imageName="react-js" type="svg" />
+            <IconImage imageName="node-js" type="svg" />
+            <IconImage imageName="nextjs" type="svg" />
+          </StyledLineIcons>
+          <StyledLineIcons>
+            <IconImage imageName="github" type="svg" />
+            <IconImage imageName="mongodb" type="svg" />
+          </StyledLineIcons>
+          <StyledLineIcons>
+            <IconImage imageName="StyledComponents" type="svg" />
+          </StyledLineIcons>
         </StyledContainerDescription>
       </MainContainerAfterGif>
     </>
