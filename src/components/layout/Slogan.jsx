@@ -5,7 +5,8 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: left;
-  margin-top: 45vh;
+  margin-top: 5vh;
+  margin-right: 60vh;
 `
 
 const StyledSlogan = styled.p`

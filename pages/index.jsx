@@ -8,7 +8,7 @@ const Constainer = styled.div`
 `
 
 const StyledImage = styled.div`
-  background-image: url('/Debbie Balboa _ Photo.gif');
+  background-image: url('/Debbie Balboa.gif');
   width: 100%;
   min-height: 100vh;
   background-repeat: no-repeat;
