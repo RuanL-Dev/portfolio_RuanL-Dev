@@ -14,29 +14,36 @@ const MainContainerAfterGif = styled.div`
   background: linear-gradient(180.03deg, rgba(32, 37, 48, 0.6) 7.14%, rgba(60, 76, 113, 0.6) 33.17%),
     #1d2538;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   color: ${(props) => props.theme.colors.text};
 `
 const StyledBackgroundImage = styled.div`
   background: #475b74;
-  width: 50%;
-  width: 340px;
-  height: 490px;
+  width: 40%;
+  width: 300px;
+  height: 300px;
   align-items: center;
-  margin-left: 10vh;
+  margin-left: 5vh;
   margin-top: 40px;
+  z-index: 0;
 `
 const StyledSelfImage = styled.div`
   background-image: url('/Foto_personalizada_Ruan.jpg');
+  width: 300px;
+  height: 650px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+  margin-top: 20px;
+  margin-left: 25px;
 `
 
 const StyledContainerDescription = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 30px;
+  margin-top: 30px;
   margin-left: 10vh;
 `
 
@@ -50,6 +57,7 @@ const StyledDescriptionSubTitle1 = styled.p`
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
+  right: 200px;
 `
 const StyledDescriptionSubTitle2 = styled.span`
   font-weight: 400;
@@ -72,8 +80,9 @@ export default function HomePage() {
         <Slogan />
       </StyledImage>
       <MainContainerAfterGif>
-        <StyledBackgroundImage />
-        <StyledSelfImage />
+        <StyledBackgroundImage>
+          <StyledSelfImage />
+        </StyledBackgroundImage>
         <StyledContainerDescription>
           <StyledDescriptionTitle>Sobre mim</StyledDescriptionTitle>
           <StyledDescriptionSubTitle1>Ruan Lopes Gomes</StyledDescriptionSubTitle1>
