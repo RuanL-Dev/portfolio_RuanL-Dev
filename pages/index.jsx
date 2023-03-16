@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Navbar from '../src/components/layout/navbar/Navbar'
 import Slogan from '../src/components/layout/Slogan'
 import IconImage from '../src/components/iconImage/IconImage'
+import Button from '../src/components/button/Button'
 
 const StyledImage = styled.div`
   background-image: url('/Debbie_Balboa.gif');
@@ -41,16 +42,17 @@ const StyledSelfImage = styled.div`
 `
 
 const StyledContainerDescription = styled.div`
-  width: 50%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   margin-top: 30px;
   margin-left: 10vh;
+  padding-right: 15px;
 `
 
 const StyledDescriptionTitle = styled.p`
   font-weight: 700;
-  font-size: 64px;
+  font-size: 50px;
   line-height: 77px;
   padding-bottom: 20px;
 `
@@ -117,6 +119,7 @@ export default function HomePage() {
           <StyledLineIcons>
             <IconImage imageName="StyledComponents" type="svg" />
           </StyledLineIcons>
+          <Button />
         </StyledContainerDescription>
       </MainContainerAfterGif>
     </>
