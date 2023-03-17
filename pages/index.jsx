@@ -74,11 +74,18 @@ const StyledDescriptionText = styled.p`
   line-height: 19px;
   text-justify: center;
 `
+const StyledContainerIcons = styled.div`
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+`
 const StyledLineIcons = styled.div`
   display: flex;
-  margin-top: 20px;
   justify-content: center;
   gap: 10px;
+  margin-top: 20px;
 `
 
 export default function HomePage() {
@@ -101,25 +108,28 @@ export default function HomePage() {
             always looking forward to learning new technologies and overcome new challenges. Happy
             Happy to relocate for any great opportunity.
           </StyledDescriptionText>
-          <StyledLineIcons>
-            <IconImage imageName="typescript" type="svg" />
-            <IconImage imageName="javascript" type="svg" />
-            <IconImage imageName="html" type="svg" />
-            <IconImage imageName="css" type="svg" />
-          </StyledLineIcons>
-          <StyledLineIcons>
-            <IconImage imageName="react-js" type="svg" />
-            <IconImage imageName="node-js" type="svg" />
-            <IconImage imageName="nextjs" type="svg" />
-          </StyledLineIcons>
-          <StyledLineIcons>
-            <IconImage imageName="github" type="svg" />
-            <IconImage imageName="mongodb" type="svg" />
-          </StyledLineIcons>
-          <StyledLineIcons>
-            <IconImage imageName="StyledComponents" type="svg" />
-          </StyledLineIcons>
-          <Button />
+          <StyledContainerIcons>
+            <StyledLineIcons>
+              <IconImage imageName="typescript" type="svg" />
+              <IconImage imageName="javascript" type="svg" />
+              <IconImage imageName="html" type="svg" />
+              <IconImage imageName="css" type="svg" />
+            </StyledLineIcons>
+            <StyledLineIcons>
+              <IconImage imageName="react-js" type="svg" />
+              <IconImage imageName="node-js" type="svg" />
+              <IconImage imageName="nextjs" type="svg" />
+            </StyledLineIcons>
+            <StyledLineIcons>
+              <IconImage imageName="github" type="svg" />
+              <IconImage imageName="mongodb" type="svg" />
+            </StyledLineIcons>
+            <StyledLineIcons>
+              <IconImage imageName="StyledComponents" type="svg" />
+            </StyledLineIcons>
+            <Button>Download CV</Button>
+          </StyledContainerIcons>
+          <StyledDescriptionTitle>Projetos</StyledDescriptionTitle>
         </StyledContainerDescription>
       </MainContainerAfterGif>
     </>

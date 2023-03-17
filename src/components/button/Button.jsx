@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
-const StyledButton = styled.div`
-  margin-top: 40px;
-  margin-left: 340px;
+const StyledButton = styled.button`
+  margin-top: 30px;
   text-align: center;
   color: ${(props) => props.theme.colors.text};
   background-color: ${(props) => props.theme.colors.buttonBackgroundColor};
@@ -56,9 +55,8 @@ const StyledButton = styled.div`
   }
 `
 
-
-const Button = ({ children, loading, ...props }) => {
-  return <StyledButton>Download CV</StyledButton>
+const Button = ({ children, ...props }) => {
+  return <StyledButton>{children}</StyledButton>
 }
 
 export default Button
