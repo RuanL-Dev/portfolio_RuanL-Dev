@@ -19,14 +19,22 @@ const StyledImage = styled.div`
 export default function HomePage() {
   return (
     <>
-      <StyledImage>
-        <Navbar />
-        <Slogan />
-      </StyledImage>
+      <div id="intro">
+        <StyledImage>
+          <Navbar />
+          <Slogan />
+        </StyledImage>
+      </div>
       <ContainerPage>
-        <AboutMe />
-        <Projects />
-        <ContactSession />
+        <div id="about">
+          <AboutMe />
+        </div>
+        <div id="projects">
+          <Projects />
+        </div>
+        <div id="contact">
+          <ContactSession />
+        </div>
         <Footer />
       </ContainerPage>
     </>
