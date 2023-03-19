@@ -19,7 +19,7 @@ const StyledImagen = styled.div`
   }
 `
 const CardContainerDescription = styled.div`
-  background-color: ${(props) => props.theme.colors.buttonBackgroundColor};
+  background-color: ${(props) => props.theme.colors.SecondaryBackgroundColor};
   width: 535px;
   height: 13rem;
   border-radius: 5px;

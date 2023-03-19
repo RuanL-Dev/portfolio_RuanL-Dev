@@ -4,7 +4,7 @@ const StyledButton = styled.button`
   margin-top: 30px;
   text-align: center;
   color: ${(props) => props.theme.colors.text};
-  background-color: ${(props) => props.theme.colors.buttonBackgroundColor};
+  background-color: ${(props) => props.theme.colors.SecondaryBackgroundColor};
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;

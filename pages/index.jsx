@@ -7,6 +7,7 @@ import ContainerPage from '../src/components/layout/ContainerPage'
 import Button from '../src/components/button/Button'
 import CardProject from '../src/components/card/CardProject'
 import Contact from '../src/components/layout/contact/Contact'
+import Footer from '../src/components/layout/footer/Footer'
 
 const StyledImage = styled.div`
   background-image: url('/Debbie_Balboa.gif');
@@ -241,6 +242,7 @@ export default function HomePage() {
             type="svg"
           />
         </StyledContact>
+        <Footer />
       </ContainerPage>
     </>
   )
