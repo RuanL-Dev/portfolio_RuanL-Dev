@@ -55,6 +55,7 @@ const StyledButton = styled.button`
   }
 `
 
+// eslint-disable-next-line no-unused-vars
 const Button = ({ children, link, ...props }) => {
   return (
     <a href={link} target="_blank" rel="noreferrer">
