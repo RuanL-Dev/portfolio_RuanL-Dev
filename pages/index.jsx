@@ -166,7 +166,7 @@ export default function HomePage() {
           <StyledDescriptionText>
             Possuo um ano de experiência como programador FullStack por meio de desenvolvimento de
             diferentes projetos pessoais e de um site, como projeto voluntário, para uma instituição
-            de caridade chamada "Challenge do Bem".
+            de caridade chamada Challenge do Bem.
             <br />
             Ao clicar na imagem do projeto será redirecionado para o site e ao clicar no título
             poderá visualizar o repositório do mesmo.

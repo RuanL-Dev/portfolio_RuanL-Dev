@@ -6,7 +6,7 @@ const StyledIcon = styled.img`
 
   :hover {
     transform: scale(1.3);
-}
+  }
 `
 
 function IconImage({ imageName, type, size }) {
