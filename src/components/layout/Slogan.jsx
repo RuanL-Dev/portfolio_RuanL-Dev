@@ -6,7 +6,7 @@ const Container = styled.div`
   align-items: center;
   text-align: left;
   position: absolute;
-  left: 20vh;
+  left: 25vh;
 `
 
 const StyledSlogan = styled.p`

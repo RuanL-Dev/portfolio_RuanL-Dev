@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const FooterContainer = styled.div`
   background-color: ${(props) => props.theme.colors.SecondaryBackgroundColor};
-  height: 60px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
