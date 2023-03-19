@@ -9,12 +9,7 @@ const StyledContainerContact = styled.div`
   align-items: center;
   gap: 5px;
 `
-const StyledDescriptionTitle = styled.p`
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 77px;
-  padding-bottom: 20px;
-`
+
 const StyledContactInfo = styled.div`
   a {
     display: flex;
