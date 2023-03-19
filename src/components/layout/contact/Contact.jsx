@@ -9,6 +9,12 @@ const StyledContainerContact = styled.div`
   align-items: center;
   gap: 5px;
 `
+const StyledDescriptionTitle = styled.p`
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 77px;
+  padding-bottom: 20px;
+`
 const StyledContactInfo = styled.div`
   a {
     display: flex;
@@ -18,11 +24,12 @@ const StyledContactInfo = styled.div`
     margin-right: 70px;
     gap: 20px;
     text-decoration: none;
+    color: ${(props) => props.theme.colors.text};
 
     transition: 0.2s ease-in-out;
     :hover {
       transform: scale(1.1);
-  }
+    }
   }
 `
 const StyledText = styled.p`
@@ -33,13 +40,13 @@ const StyledText = styled.p`
   cursor: pointer;
 `
 
-const Contact = () => {
+const Contact = ({ text, link, image, type }) => {
   return (
     <StyledContainerContact>
       <StyledContactInfo>
-        <a href="https://github.com/RuanL-Dev" target="_blank" rel="noreferrer">
-          <IconImage imageName="github" type="svg" />
-          <StyledText>RuanL-Dev</StyledText>
+        <a href={link} target="_blank" rel="noreferrer">
+          <IconImage imageName={image} type={type} />
+          <StyledText>{text}</StyledText>
         </a>
       </StyledContactInfo>
     </StyledContainerContact>
