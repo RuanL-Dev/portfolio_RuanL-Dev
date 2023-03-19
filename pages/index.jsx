@@ -4,8 +4,8 @@ import Navbar from '../src/components/layout/navbar/Navbar'
 import Slogan from '../src/components/layout/Slogan'
 import ContainerPage from '../src/components/layout/ContainerPage'
 import AboutMe from '../src/components/layout/aboutMe/AboutMe'
-import CardProject from '../src/components/card/CardProject'
-import Contact from '../src/components/layout/contact/Contact'
+import Projects from '../src/components/layout/projects/Projects'
+import ContactSession from '../src/components/layout/contact/ContactSession'
 import Footer from '../src/components/layout/footer/Footer'
 
 const StyledImage = styled.div`
@@ -14,47 +14,6 @@ const StyledImage = styled.div`
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-`
-
-const StyledDescriptionTitle = styled.p`
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 77px;
-  padding-bottom: 20px;
-`
-
-const StyledDescriptionText = styled.p`
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  text-justify: center;
-`
-
-const StyledContainerProjectsTitle = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 3rem 8rem;
-`
-const StyledContainerProject = styled.div`
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 5px;
-  grid-row-gap: 40px;
-
-  @media (max-width: 900px) {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-`
-const StyledContact = styled(StyledContainerProjectsTitle)`
-  margin: 10rem 8rem;
-`
-const StyledContainerTitleContact = styled.div`
-  margin-bottom: 40px;
 `
 
 export default function HomePage() {
@@ -66,87 +25,8 @@ export default function HomePage() {
       </StyledImage>
       <ContainerPage>
         <AboutMe />
-        <StyledContainerProjectsTitle>
-          <StyledDescriptionTitle>Projetos</StyledDescriptionTitle>
-          <StyledDescriptionText>
-            Possuo um ano de experiência como programador FullStack por meio de desenvolvimento de
-            diferentes projetos pessoais e de um site, como projeto voluntário, para uma instituição
-            de caridade chamada Challenge do Bem.
-            <br />
-            Ao clicar na imagem do projeto será redirecionado para o site e ao clicar no título
-            poderá visualizar o repositório do mesmo.
-          </StyledDescriptionText>
-        </StyledContainerProjectsTitle>
-        <StyledContainerProject>
-          <CardProject
-            image="CbIcon"
-            type="svg"
-            descrição="Desenvolvimento de website para uma organização não governamental sem fins lucrativos que realiza doações a instituições e pessoas 
-            carentes."
-            span="- Uso de tecnologias como ReactJS | NextJs e Styled-components para o desenvolvimento da landing page"
-            title="Challenge do Bem"
-            LinkSite="https://challenge-do-bem-react-js.vercel.app"
-            LinkRepo="https://github.com/AlunosSejaDev/challenge-do-bem-reactJS"
-          />
-          <CardProject
-            image="ClimaDev"
-            type="png"
-            descrição="Site para verificar condições meteorológicas de sua cidade"
-            span="Projeto desenvolvido utilizando ReactJS | NextJs | NodeJs e Styled Components, consumindo a API do Open Weather Map para mostrar 
-            condições meteorológicas atuais e previsão das próximas horas para a cidade selecionada na busca."
-            title="ClimaDev"
-            LinkSite="https://climadev-ruanl-dev.vercel.app"
-            LinkRepo="https://github.com/RuanL-Dev/climadev"
-          />
-          <CardProject
-            image="SocialDevIcon"
-            type="svg"
-            descrição="Rede Social para desenvolvedores"
-            span="Projeto utilizando ReactJs | NextJs | NodeJs e armazenamento de dados do usuário e postagens com banco de dados MongoDB. Outros destaques: Styled-components | 
-            responsividade do site | criação de API para cadastro e login | Token de acesso e JWT | sistema CRUD."
-            title="SocialDev"
-            LinkSite="https://social-dev-ruanl-dev.vercel.app/login"
-            LinkRepo="https://github.com/RuanL-Dev/Social-Dev"
-          />
-          <CardProject
-            image="CrudIcon"
-            type="svg"
-            descrição="Sistema de CRUD para carros"
-            span="Criação de uma API Rest para cadastro, edição e seleção (favoritos) de veículos (CRUD) e possibilidade de deletar o anúncio. Uso de 
-            tecnologias como ReactJs | NextJs | NodeJs | MongoDB e Styled-components"
-            title="CRUD de Veículos"
-            LinkSite="https://ruanl-crud-vehicles.vercel.app"
-            LinkRepo="https://github.com/RuanL-Dev/CRUD_Vehicles"
-          />
-          <CardProject
-            image="JogoDaVelha"
-            type="png"
-            descrição="Projeto desenvolvido com tecnologias ReactJs e NextJs."
-            span="Outros destaques importantes: uso de React Hooks para armazenamento de posições, cliques e definição de campeão da partida 
-            e responsividade do game."
-            title="Jogo da Velha"
-            LinkSite="https://react-jogo-da-velha-ruanl-dev.vercel.app"
-            LinkRepo="https://github.com/RuanL-Dev/react-nextjs-jogo-da-velha"
-          />
-        </StyledContainerProject>
-        <StyledContact>
-          <StyledContainerTitleContact>
-            <StyledDescriptionTitle>Contato</StyledDescriptionTitle>
-          </StyledContainerTitleContact>
-          <Contact text="RuanL-Dev" link="https://github.com/RuanL-Dev" image="github" type="svg" />
-          <Contact
-            text="ruanlopes21@gmail.com"
-            link="mailto:ruanlopes21@gmail.com"
-            image="YellowEmailIcon"
-            type="svg"
-          />
-          <Contact
-            text="https://www.linkedin.com/in/ruanl-dev"
-            link="https://www.linkedin.com/in/ruanl-dev/"
-            image="YellowLinkedinIcon"
-            type="svg"
-          />
-        </StyledContact>
+        <Projects />
+        <ContactSession />
         <Footer />
       </ContainerPage>
     </>
