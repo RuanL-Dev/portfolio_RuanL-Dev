@@ -24,7 +24,7 @@ const StyledContainerTitleContact = styled.div`
   margin-bottom: 40px;
 `
 
-const Contact = ({ text, link, image, type }) => {
+const Contact = () => {
   return (
     <StyledContact>
       <StyledContainerTitleContact>
