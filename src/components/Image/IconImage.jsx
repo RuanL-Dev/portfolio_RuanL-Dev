@@ -1,7 +1,12 @@
 import styled from 'styled-components'
 
 const StyledIcon = styled.img`
+  transition: 0.2s ease-in-out;
   cursor: pointer;
+
+  :hover {
+    transform: scale(1.3);
+}
 `
 
 function IconImage({ imageName, type, size }) {

@@ -87,8 +87,10 @@ const StyledLineIcons = styled.div`
 `
 const StyledContainerProjectsTitle = styled.div`
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  margin: 3rem 0;
+  margin: 3rem 8rem;
 `
 const StyledContainerProject = styled.div`
   display: grid;
@@ -102,6 +104,9 @@ const StyledContainerProject = styled.div`
     display: flex;
     flex-direction: column;
   }
+`
+const StyledContact = styled(StyledContainerProjectsTitle)`
+  margin: 10rem 8rem;
 `
 
 export default function HomePage() {
@@ -121,9 +126,12 @@ export default function HomePage() {
             <StyledDescriptionSubTitle1>Ruan Lopes Gomes</StyledDescriptionSubTitle1>
             <StyledDescriptionSubTitle2>Full-Stack Developer</StyledDescriptionSubTitle2>
             <StyledDescriptionText>
-              Passionate developer looking for a great team to build Apps and WebPages together. I
-              am always looking forward to learning new technologies and overcome new challenges.
-              Happy Happy to relocate for any great opportunity.
+              Com um perfil investigativo, rápido aprendizado e grande interesse por novos
+              conhecimentos, foco no uso da tecnologia para desenvolvimento de soluções práticas e
+              criativas para resolução de problemas. Sou um desenvolvedor apaixonado em busca de
+              grande equipe para construir aplicativos e páginas da Web juntos. Estou sempre ansioso
+              ansioso para aprender novas tecnologias e superar desafios. Com disponibilidade para
+              trabalhar e se mudar, se for necessário, em uma oportunidade presencial ou remota.
             </StyledDescriptionText>
             <StyledContainerIcons>
               <StyledLineIcons>
@@ -150,6 +158,14 @@ export default function HomePage() {
         </ContainerDescription>
         <StyledContainerProjectsTitle>
           <StyledDescriptionTitle>Projetos</StyledDescriptionTitle>
+          <StyledDescriptionText>
+            Possuo um ano de experiência como programador FullStack por meio de desenvolvimento de
+            diferentes projetos pessoais e de um site, como projeto voluntário, para uma instituição
+            de caridade chamada "Challenge do Bem".
+            <br />
+            Ao clicar na imagem do projeto será redirecionado para o site e ao clicar no título
+            poderá visualizar o repositório do mesmo.
+          </StyledDescriptionText>
         </StyledContainerProjectsTitle>
         <StyledContainerProject>
           <CardProject
@@ -203,6 +219,9 @@ export default function HomePage() {
             LinkRepo="https://github.com/RuanL-Dev/react-nextjs-jogo-da-velha"
           />
         </StyledContainerProject>
+        <StyledContact>
+          <StyledDescriptionTitle>Contato</StyledDescriptionTitle>
+        </StyledContact>
       </ContainerPage>
     </>
   )
