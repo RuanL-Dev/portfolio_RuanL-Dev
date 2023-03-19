@@ -2,9 +2,8 @@ import styled from 'styled-components'
 
 import Navbar from '../src/components/layout/navbar/Navbar'
 import Slogan from '../src/components/layout/Slogan'
-import IconImage from '../src/components/Image/IconImage'
 import ContainerPage from '../src/components/layout/ContainerPage'
-import Button from '../src/components/button/Button'
+import AboutMe from '../src/components/layout/aboutMe/AboutMe'
 import CardProject from '../src/components/card/CardProject'
 import Contact from '../src/components/layout/contact/Contact'
 import Footer from '../src/components/layout/footer/Footer'
@@ -17,76 +16,20 @@ const StyledImage = styled.div`
   background-size: cover;
 `
 
-const StyledBackgroundImage = styled.div`
-  background: #475b74;
-  width: 40%;
-  width: 300px;
-  height: 300px;
-  align-items: center;
-  margin-left: 5vh;
-  margin-top: 40px;
-  z-index: 0;
-`
-const StyledSelfImage = styled.div`
-  background-image: url('/Foto_personalizada_Ruan.jpg');
-  width: 300px;
-  height: 650px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: 1;
-  margin-top: 20px;
-  margin-left: 25px;
-`
-const ContainerDescription = styled.div`
-  display: flex;
-`
-
-const StyledContainerDescription = styled.div`
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  margin-top: 30px;
-  margin-left: 10vh;
-  padding-right: 15px;
-`
-
 const StyledDescriptionTitle = styled.p`
   font-weight: 700;
   font-size: 50px;
   line-height: 77px;
   padding-bottom: 20px;
 `
-const StyledDescriptionSubTitle1 = styled.p`
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  right: 200px;
-`
-const StyledDescriptionSubTitle2 = styled.span`
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  padding-bottom: 30px;
-`
+
 const StyledDescriptionText = styled.p`
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   text-justify: center;
 `
-const StyledContainerIcons = styled.div`
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 50px;
-`
-const StyledLineIcons = styled.div`
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
-`
+
 const StyledContainerProjectsTitle = styled.div`
   display: flex;
   flex-direction: column;
@@ -122,47 +65,7 @@ export default function HomePage() {
         <Slogan />
       </StyledImage>
       <ContainerPage>
-        <ContainerDescription>
-          <StyledBackgroundImage>
-            <StyledSelfImage />
-          </StyledBackgroundImage>
-          <StyledContainerDescription>
-            <StyledDescriptionTitle>Sobre mim</StyledDescriptionTitle>
-            <StyledDescriptionSubTitle1>Ruan Lopes Gomes</StyledDescriptionSubTitle1>
-            <StyledDescriptionSubTitle2>Full-Stack Developer</StyledDescriptionSubTitle2>
-            <StyledDescriptionText>
-              Com um perfil investigativo, rápido aprendizado e grande interesse por novos
-              conhecimentos, foco no uso da tecnologia para desenvolvimento de soluções práticas e
-              criativas para resolução de problemas. Sou um desenvolvedor apaixonado em busca de
-              grande equipe para construir aplicativos e páginas da Web juntos. Estou sempre ansioso
-              ansioso para aprender novas tecnologias e superar desafios. Com disponibilidade para
-              trabalhar e se mudar, se for necessário, em uma oportunidade presencial ou remota.
-            </StyledDescriptionText>
-            <StyledContainerIcons>
-              <StyledLineIcons>
-                <IconImage imageName="typescript" type="svg" />
-                <IconImage imageName="javascript" type="svg" />
-                <IconImage imageName="html" type="svg" />
-                <IconImage imageName="css" type="svg" />
-              </StyledLineIcons>
-              <StyledLineIcons>
-                <IconImage imageName="react-js" type="svg" />
-                <IconImage imageName="node-js" type="svg" />
-                <IconImage imageName="nextjs" type="svg" />
-              </StyledLineIcons>
-              <StyledLineIcons>
-                <IconImage imageName="github" type="svg" />
-                <IconImage imageName="mongodb" type="svg" />
-              </StyledLineIcons>
-              <StyledLineIcons>
-                <IconImage imageName="StyledComponents" type="svg" />
-              </StyledLineIcons>
-              <Button link="https://drive.google.com/file/d/19l9GeXImbxBHmq_bdcXwVB4HEEj-_9qc/view?usp=drivesdk">
-                Download CV
-              </Button>
-            </StyledContainerIcons>
-          </StyledContainerDescription>
-        </ContainerDescription>
+        <AboutMe />
         <StyledContainerProjectsTitle>
           <StyledDescriptionTitle>Projetos</StyledDescriptionTitle>
           <StyledDescriptionText>
