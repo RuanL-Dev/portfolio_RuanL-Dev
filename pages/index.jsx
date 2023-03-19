@@ -17,9 +17,6 @@ const StyledImage = styled.div`
   background-size: cover;
 `
 
-const ContainerDescription = styled.div`
-  display: flex;
-`
 const StyledBackgroundImage = styled.div`
   background: #475b74;
   width: 40%;
@@ -39,6 +36,9 @@ const StyledSelfImage = styled.div`
   z-index: 1;
   margin-top: 20px;
   margin-left: 25px;
+`
+const ContainerDescription = styled.div`
+  display: flex;
 `
 
 const StyledContainerDescription = styled.div`
@@ -157,7 +157,9 @@ export default function HomePage() {
               <StyledLineIcons>
                 <IconImage imageName="StyledComponents" type="svg" />
               </StyledLineIcons>
-              <Button>Download CV</Button>
+              <Button link="https://drive.google.com/file/d/19l9GeXImbxBHmq_bdcXwVB4HEEj-_9qc/view?usp=drivesdk">
+                Download CV
+              </Button>
             </StyledContainerIcons>
           </StyledContainerDescription>
         </ContainerDescription>

@@ -55,8 +55,12 @@ const StyledButton = styled.button`
   }
 `
 
-const Button = ({ children, ...props }) => {
-  return <StyledButton>{children}</StyledButton>
+const Button = ({ children, link, ...props }) => {
+  return (
+    <a href={link} target="_blank" rel="noreferrer">
+      <StyledButton>{children}</StyledButton>
+    </a>
+  )
 }
 
 export default Button
