@@ -6,6 +6,7 @@ import IconImage from '../src/components/Image/IconImage'
 import ContainerPage from '../src/components/layout/ContainerPage'
 import Button from '../src/components/button/Button'
 import CardProject from '../src/components/card/CardProject'
+import Contact from '../src/components/layout/contact/Contact'
 
 const StyledImage = styled.div`
   background-image: url('/Debbie_Balboa.gif');
@@ -107,6 +108,9 @@ const StyledContainerProject = styled.div`
 `
 const StyledContact = styled(StyledContainerProjectsTitle)`
   margin: 10rem 8rem;
+`
+const StyledContainerTitleContact = styled.div`
+  margin-bottom: 40px;
 `
 
 export default function HomePage() {
@@ -220,7 +224,22 @@ export default function HomePage() {
           />
         </StyledContainerProject>
         <StyledContact>
-          <StyledDescriptionTitle>Contato</StyledDescriptionTitle>
+          <StyledContainerTitleContact>
+            <StyledDescriptionTitle>Contato</StyledDescriptionTitle>
+          </StyledContainerTitleContact>
+          <Contact text="RuanL-Dev" link="https://github.com/RuanL-Dev" image="github" type="svg" />
+          <Contact
+            text="ruanlopes21@gmail.com"
+            link="mailto:ruanlopes21@gmail.com"
+            image="YellowEmailIcon"
+            type="svg"
+          />
+          <Contact
+            text="https://www.linkedin.com/in/ruanl-dev"
+            link="https://www.linkedin.com/in/ruanl-dev/"
+            image="YellowLinkedinIcon"
+            type="svg"
+          />
         </StyledContact>
       </ContainerPage>
     </>
