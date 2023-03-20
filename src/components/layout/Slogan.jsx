@@ -65,7 +65,7 @@ export default function Slogan() {
         {'<'}
         <StyledColor> Ruan Lopes</StyledColor> <span>{'/>'}</span>
       </StyledSlogan>
-      <StyledSlogan>Desenvolvedor FullStack</StyledSlogan>
+      <StyledSlogan>Desenvolvedor Full Stack</StyledSlogan>
     </Container>
   )
 }

@@ -2,6 +2,10 @@ import styled from 'styled-components'
 
 import IconImage from '../../Image/IconImage'
 import Button from '../../button/Button'
+import H1 from '../../../typograph/H1Title'
+import H2 from '../../../typograph/H2SubTitle1'
+import H3 from '../../../typograph/H3Subtitle2'
+import H4 from '../../../typograph/H4Text'
 
 const ContainerDescription = styled.div`
   display: flex;
@@ -60,28 +64,10 @@ const StyledContainerDescription = styled.div`
   padding-right: 15px;
 `
 
-const StyledDescriptionTitle = styled.p`
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 77px;
-  padding-bottom: 20px;
+const StyledDescriptionSubTitle2 = styled.div`
+  padding-bottom: 25px;
 `
-const StyledDescriptionSubTitle1 = styled.p`
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  right: 200px;
-`
-const StyledDescriptionSubTitle2 = styled.span`
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  padding-bottom: 30px;
-`
-const StyledDescriptionText = styled.p`
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
+const StyledDescriptionText = styled.div`
   text-justify: center;
 `
 const StyledContainerIcons = styled.div`
@@ -105,16 +91,20 @@ const AboutMe = () => {
         <StyledSelfImage />
       </StyledBackgroundImage>
       <StyledContainerDescription>
-        <StyledDescriptionTitle>Sobre mim</StyledDescriptionTitle>
-        <StyledDescriptionSubTitle1>Ruan Lopes Gomes</StyledDescriptionSubTitle1>
-        <StyledDescriptionSubTitle2>Full-Stack Developer</StyledDescriptionSubTitle2>
+        <H1>Sobre mim</H1>
+        <H2>Ruan Lopes Gomes</H2>
+        <StyledDescriptionSubTitle2>
+          <H3>Full Stack Developer</H3>
+        </StyledDescriptionSubTitle2>
         <StyledDescriptionText>
-          Com um perfil investigativo, rápido aprendizado e grande interesse por novos
-          conhecimentos, foco no uso da tecnologia para desenvolvimento de soluções práticas e
-          criativas para resolução de problemas. Sou um desenvolvedor apaixonado em busca de grande
-          equipe para construir aplicativos e páginas da Web juntos. Estou sempre ansioso para
-          aprender novas tecnologias e superar desafios. Com disponibilidade para trabalhar de forma
-          presencial ou remota independente do lugar.
+          <H4>
+            Com um perfil investigativo, rápido aprendizado e grande interesse por novos
+            conhecimentos, foco no uso da tecnologia para desenvolvimento de soluções práticas e
+            criativas para resolução de problemas. Sou um desenvolvedor apaixonado em busca de
+            grande grande equipe para construir aplicativos e páginas da Web juntos. Estou sempre
+            ansioso aprender novas tecnologias e superar desafios. Com disponibilidade para
+            trabalhar de forma presencial ou remota independente do lugar.
+          </H4>
         </StyledDescriptionText>
         <StyledContainerIcons>
           <StyledLineIcons>
