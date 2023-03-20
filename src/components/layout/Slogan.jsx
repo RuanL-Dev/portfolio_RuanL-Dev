@@ -7,6 +7,16 @@ const Container = styled.div`
   text-align: left;
   position: absolute;
   left: 25vh;
+
+  @media (max-width: 900px) {
+    top: 15vh;
+    left: 10vh;
+  }
+
+  @media (max-width: 580px) {
+    top: 15vh;
+    left: 5vh;
+  }
 `
 
 const StyledSlogan = styled.p`
@@ -16,6 +26,18 @@ const StyledSlogan = styled.p`
   font-weight: 700;
   font-size: 38px;
   line-height: 40px;
+
+  @media (max-width: 900px) {
+    font-size: 25px;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 15px;
+  }
 `
 const StyledColor = styled.span`
   color: #7F1AE3;

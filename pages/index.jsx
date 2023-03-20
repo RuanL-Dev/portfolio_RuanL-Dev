@@ -15,6 +15,9 @@ const StyledImage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (max-width: 425px) {
+    background-image: none;
+  }
   @media (max-width: 880px) {
     background-size: contain;
     width: 100%;
