@@ -38,7 +38,7 @@ const Contact = () => {
         type="svg"
       />
       <NewContact
-        text="https://www.linkedin.com/in/ruanl-dev"
+        text="linkedin.com/in/ruanl-dev"
         link="https://www.linkedin.com/in/ruanl-dev/"
         image="YellowLinkedinIcon"
         type="svg"

@@ -69,6 +69,10 @@ const StyledDescriptionSubTitle2 = styled.div`
 `
 const StyledDescriptionText = styled.div`
   text-justify: center;
+
+  @media (max-width: 425px) {
+    margin: 40px 0;
+  }
 `
 const StyledContainerIcons = styled.div`
   margin-top: 20px;

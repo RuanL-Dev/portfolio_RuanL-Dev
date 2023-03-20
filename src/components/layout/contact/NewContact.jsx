@@ -26,6 +26,9 @@ const StyledContactInfo = styled.div`
     :hover {
       transform: scale(1.1);
     }
+    @media (max-width: 425px) {
+      margin-right: 0;
+    }
   }
 `
 const StyledText = styled.div`

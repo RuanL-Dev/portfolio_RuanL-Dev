@@ -56,10 +56,10 @@ const StyledButton = styled.button`
 
   @media (max-width: 425px) {
     font-weight: 600;
-    font-size: 30px;
+    font-size: 70px;
     line-height: 40px;
-    padding: 20px;
-    width: 300px;
+    padding: 50px;
+    width: 600px;
   }
 `
 

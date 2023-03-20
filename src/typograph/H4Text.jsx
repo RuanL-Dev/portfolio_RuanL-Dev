@@ -6,9 +6,9 @@ const H4 = styled.h4`
   line-height: 19px;
 
   @media (max-width: 425px) {
-    font-weight: 200;
-    font-size: 38px;
-    line-height: 35px;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 50px;
     text-align: left;
   }
 `

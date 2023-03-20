@@ -28,8 +28,8 @@ const CardContainerDescription = styled.div`
   padding: 25px 30px 20px 30px;
 
   @media (max-width: 425px) {
-    width: 680px;
-    height: 20rem;
+    width: 800px;
+    height: 43rem;
   }
 `
 const StyledTitle = styled.h2`
@@ -39,8 +39,8 @@ const StyledTitle = styled.h2`
 
   @media (max-width: 425px) {
     font-weight: 400;
-    font-size: 35px;
-    line-height: 25px;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   a {
@@ -71,8 +71,10 @@ const StyledDescription = styled.h4`
 
   @media (max-width: 425px) {
     font-weight: 400;
-    font-size: 32px;
-    line-height: 30px;
+    font-size: 50px;
+    line-height: 45px;
+    text-align: left;
+    margin-top: 20px;
   }
 `
 

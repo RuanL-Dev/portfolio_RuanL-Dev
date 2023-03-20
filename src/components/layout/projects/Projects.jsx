@@ -18,6 +18,10 @@ const StyledContainerProjectsTitle = styled.div`
 const StyledContainerText = styled.div`
   display: flex;
   text-align: center;
+
+  @media (max-width: 425px) {
+    margin: 40px 0;
+  }
 `
 const StyledContainerProject = styled.div`
   display: grid;

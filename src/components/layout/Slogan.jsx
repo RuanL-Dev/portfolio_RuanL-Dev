@@ -22,6 +22,7 @@ const Container = styled.div`
   @media (max-width: 425px) {
     position: relative;
     left: 0;
+    top: 8vh;
   }
 `
 
@@ -42,8 +43,8 @@ const StyledSlogan = styled.p`
   }
 
   @media (max-width: 425px) {
-    font-size: 55px;
-    line-height: 50px;
+    font-size: 75px;
+    line-height: 70px;
   }
 `
 const StyledColor = styled.span`

@@ -6,8 +6,8 @@ const H1 = styled.h1`
   line-height: 77px;
 
   @media (max-width: 425px) {
-    font-size: 75px;
-    line-height: 77px;
+    font-size: 110px;
+    line-height: 105px;
   }
 `
 

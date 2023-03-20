@@ -6,8 +6,8 @@ const H2 = styled.h2`
   line-height: 29px;
 
   @media (max-width: 425px) {
-    font-size: 37px;
-    line-height: 30px;
+    font-size: 50px;
+    line-height: 45px;
   }
 `
 

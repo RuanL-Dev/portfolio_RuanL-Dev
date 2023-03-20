@@ -12,6 +12,13 @@ const StyledText = styled.p`
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
+
+  @media (max-width: 425px) {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 30px;
+    text-align: center;
+  }
 `
 
 const Footer = () => {
