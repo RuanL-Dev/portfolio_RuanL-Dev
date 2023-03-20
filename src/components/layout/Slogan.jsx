@@ -40,7 +40,7 @@ const StyledSlogan = styled.p`
   }
 `
 const StyledColor = styled.span`
-  color: #7F1AE3;
+  color: #7f1ae3;
 `
 
 export default function Slogan() {
