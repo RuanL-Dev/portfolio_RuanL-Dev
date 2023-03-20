@@ -4,7 +4,7 @@ import NewContact from './NewContact'
 
 import H1 from '../../../typograph/H1Title'
 
-const StyledDescriptionTitle = styled.p`
+const StyledDescriptionTitle = styled.div`
   padding-bottom: 20px;
 `
 
