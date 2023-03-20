@@ -26,11 +26,22 @@ const CardContainerDescription = styled.div`
   justify-content: center;
   text-align: center;
   padding: 25px 30px 20px 30px;
+
+  @media (max-width: 425px) {
+    width: 680px;
+    height: 20rem;
+  }
 `
-const StyledTitle = styled.h3`
+const StyledTitle = styled.h2`
   padding-bottom: 20px;
   font-size: 25px;
   line-height: 19px;
+
+  @media (max-width: 425px) {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 25px;
+  }
 
   a {
     color: ${(props) => props.theme.colors.text};
@@ -53,6 +64,17 @@ const StyledTitle = styled.h3`
     width: 100%;
   }
 `
+const StyledDescription = styled.h4`
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+
+  @media (max-width: 425px) {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 30px;
+  }
+`
 
 function CardProject({ image, type, width, LinkSite, LinkRepo, title, descrição, span }) {
   return (
@@ -66,9 +88,11 @@ function CardProject({ image, type, width, LinkSite, LinkRepo, title, descriçã
             {title}
           </a>
         </StyledTitle>
-        {descrição}
-        <br />
-        {span}
+        <StyledDescription>
+          {descrição}
+          <br />
+          {span}
+        </StyledDescription>
       </CardContainerDescription>
     </CardContainer>
   )

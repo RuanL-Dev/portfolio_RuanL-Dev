@@ -15,6 +15,10 @@ const StyledContainerProjectsTitle = styled.div`
   justify-content: center;
   margin: 3rem 8rem;
 `
+const StyledContainerText = styled.div`
+  display: flex;
+  text-align: center;
+`
 const StyledContainerProject = styled.div`
   display: grid;
   justify-items: center;
@@ -36,14 +40,16 @@ const Projects = () => {
         <StyledDescriptionTitle>
           <H1>Projetos</H1>
         </StyledDescriptionTitle>
-        <H4>
-          Possuo um ano de experiência como programador FullStack por meio de desenvolvimento de
-          diferentes projetos pessoais e de um site, como projeto voluntário, para uma instituição
-          de caridade chamada Challenge do Bem.
-          <br />
-          Ao clicar na imagem do projeto será redirecionado para o site e ao clicar no título poderá
-          visualizar o repositório do mesmo.
-        </H4>
+        <StyledContainerText>
+          <H4>
+            Possuo um ano de experiência como programador FullStack por meio de desenvolvimento de
+            diferentes projetos pessoais e de um site, como projeto voluntário, para uma instituição
+            de caridade chamada Challenge do Bem.
+            <br />
+            Ao clicar na imagem do projeto será redirecionado para o site e ao clicar no título
+            poderá visualizar o repositório do mesmo.
+          </H4>
+        </StyledContainerText>
       </StyledContainerProjectsTitle>
       <StyledContainerProject>
         <CardProject
