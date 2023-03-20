@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 import IconImage from '../../Image/IconImage'
+import H2 from '../../../typograph/H2SubTitle1'
 
 const StyledContainerContact = styled.div`
   display: flex;
@@ -27,10 +28,7 @@ const StyledContactInfo = styled.div`
     }
   }
 `
-const StyledText = styled.p`
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
+const StyledText = styled.div`
   right: 200px;
   cursor: pointer;
 `
@@ -41,7 +39,9 @@ const NewContact = ({ text, link, image, type }) => {
       <StyledContactInfo>
         <a href={link} target="_blank" rel="noreferrer">
           <IconImage imageName={image} type={type} />
-          <StyledText>{text}</StyledText>
+          <StyledText>
+            <H2>{text}</H2>
+          </StyledText>
         </a>
       </StyledContactInfo>
     </StyledContainerContact>

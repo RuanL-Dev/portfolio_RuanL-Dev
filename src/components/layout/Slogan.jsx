@@ -6,7 +6,8 @@ const Container = styled.div`
   align-items: center;
   text-align: left;
   position: absolute;
-  left: 25vh;
+  top: 20vh;
+  left: 20vh;
 
   @media (max-width: 900px) {
     top: 15vh;
@@ -18,12 +19,9 @@ const Container = styled.div`
     left: 5vh;
   }
 
-  @media screen and (min-width: 425px) and (max-width: 913px) {
-    position: absolute;
-  }
-
   @media (max-width: 425px) {
     position: relative;
+    left: 0;
   }
 `
 
@@ -36,15 +34,11 @@ const StyledSlogan = styled.p`
   line-height: 40px;
 
   @media (max-width: 900px) {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   @media (max-width: 800px) {
-    font-size: 18px;
-  }
-
-  @media (max-width: 500px) {
-    font-size: 15px;
+    font-size: 25px;
   }
 
   @media (max-width: 425px) {
@@ -63,7 +57,7 @@ export default function Slogan() {
       </StyledSlogan>
       <StyledSlogan>
         {'<'}
-        <StyledColor> Ruan Lopes</StyledColor> <span>{'/>'}</span>
+        <StyledColor>Ruan Lopes</StyledColor> <span>{'/>'}</span>
       </StyledSlogan>
       <StyledSlogan>Desenvolvedor Full Stack</StyledSlogan>
     </Container>

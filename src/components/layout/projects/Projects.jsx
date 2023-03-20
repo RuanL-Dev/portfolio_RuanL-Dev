@@ -1,19 +1,11 @@
 import styled from 'styled-components'
 
 import CardProject from '../../card/CardProject'
+import H1 from '../../../typograph/H1Title'
+import H4 from '../../../typograph/H4Text'
 
-const StyledDescriptionTitle = styled.p`
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 77px;
+const StyledDescriptionTitle = styled.div`
   padding-bottom: 20px;
-`
-
-const StyledDescriptionText = styled.p`
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  text-justify: center;
 `
 
 const StyledContainerProjectsTitle = styled.div`
@@ -41,15 +33,17 @@ const Projects = () => {
   return (
     <>
       <StyledContainerProjectsTitle>
-        <StyledDescriptionTitle>Projetos</StyledDescriptionTitle>
-        <StyledDescriptionText>
+        <StyledDescriptionTitle>
+          <H1>Projetos</H1>
+        </StyledDescriptionTitle>
+        <H4>
           Possuo um ano de experiência como programador FullStack por meio de desenvolvimento de
           diferentes projetos pessoais e de um site, como projeto voluntário, para uma instituição
           de caridade chamada Challenge do Bem.
           <br />
           Ao clicar na imagem do projeto será redirecionado para o site e ao clicar no título poderá
           visualizar o repositório do mesmo.
-        </StyledDescriptionText>
+        </H4>
       </StyledContainerProjectsTitle>
       <StyledContainerProject>
         <CardProject

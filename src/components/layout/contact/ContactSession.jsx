@@ -2,10 +2,9 @@ import styled from 'styled-components'
 
 import NewContact from './NewContact'
 
+import H1 from '../../../typograph/H1Title'
+
 const StyledDescriptionTitle = styled.p`
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 77px;
   padding-bottom: 20px;
 `
 
@@ -27,7 +26,9 @@ const Contact = () => {
   return (
     <StyledContact>
       <StyledContainerTitleContact>
-        <StyledDescriptionTitle>Contato</StyledDescriptionTitle>
+        <StyledDescriptionTitle>
+          <H1>Contato</H1>
+        </StyledDescriptionTitle>
       </StyledContainerTitleContact>
       <NewContact text="RuanL-Dev" link="https://github.com/RuanL-Dev" image="github" type="svg" />
       <NewContact
