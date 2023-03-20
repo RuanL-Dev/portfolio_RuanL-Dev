@@ -14,11 +14,10 @@ const StyledContainerProjectsTitle = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 3rem 8rem;
 `
 
 const StyledContact = styled(StyledContainerProjectsTitle)`
-  margin: 10rem 8rem;
+  margin: 8rem 8rem;
 `
 const StyledContainerTitleContact = styled.div`
   margin-bottom: 40px;

@@ -17,12 +17,11 @@ const StyledImage = styled.div`
 
   @media (max-width: 425px) {
     background-image: none;
+    min-height: 60vh;
+    width: 100%;
   }
   @media (max-width: 880px) {
     background-size: contain;
-    width: 100%;
-  }
-  @media screen and (min-width: 900px) and (max-width: 1075px) {
     width: 100%;
   }
 `

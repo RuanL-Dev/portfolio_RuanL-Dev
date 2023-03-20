@@ -9,8 +9,11 @@ const StyledMainContainerPage = styled.div`
   flex-direction: column;
   color: ${(props) => props.theme.colors.text};
 
-  @media (max-width: 880px) {
-    
+  @media (max-width: 425px) {
+    width: 100%;
+  }
+  @media (max-width: 680px) {
+    width: 150vh;
   }
   @media screen and (min-width: 900px) and (max-width: 1075px) {
     width: 120%;

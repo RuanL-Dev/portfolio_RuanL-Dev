@@ -17,6 +17,14 @@ const Container = styled.div`
     top: 15vh;
     left: 5vh;
   }
+
+  @media screen and (min-width: 425px) and (max-width: 913px) {
+    position: absolute;
+  }
+
+  @media (max-width: 425px) {
+    position: relative;
+  }
 `
 
 const StyledSlogan = styled.p`
@@ -37,6 +45,10 @@ const StyledSlogan = styled.p`
 
   @media (max-width: 500px) {
     font-size: 15px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 40px;
   }
 `
 const StyledColor = styled.span`

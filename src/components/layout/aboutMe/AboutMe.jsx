@@ -6,24 +6,27 @@ import Button from '../../button/Button'
 const ContainerDescription = styled.div`
   display: flex;
 
+  @media (max-width: 430px) {
+    padding-top: 10vh;
+  }
   @media (max-width: 880px) {
     margin-top: -20vh;
+  }
+
+  @media (max-width: 680px) {
+    padding-top: 15vh;
   }
 
   @media (max-width: 800px) {
     margin-top: -30vh;
   }
 
-  @media (max-width: 660px) {
-    margin-top: -40vh;
-  }
-
-  @media (max-width: 545px) {
-    margin-top: -52vh;
-  }
-
-  @media (max-width: 450px) {
-    margin-top: -60vh;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 `
 
