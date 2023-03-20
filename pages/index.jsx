@@ -14,18 +14,27 @@ const StyledImage = styled.div`
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (max-width: 880px) {
+    background-size: contain;
+    width: 100%;
+  }
+  @media screen and (min-width: 900px) and (max-width: 1075px) {
+    width: 100%;
+  }
 `
 
 export default function HomePage() {
   return (
     <>
-      <div id="intro">
-        <StyledImage>
-          <Navbar />
-          <Slogan />
-        </StyledImage>
-      </div>
       <ContainerPage>
+        <div id="intro">
+          <StyledImage>
+            <Navbar />
+            <Slogan />
+          </StyledImage>
+        </div>
+
         <div id="about">
           <AboutMe />
         </div>

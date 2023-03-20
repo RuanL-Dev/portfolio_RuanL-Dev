@@ -3,6 +3,30 @@ import styled from 'styled-components'
 import IconImage from '../../Image/IconImage'
 import Button from '../../button/Button'
 
+const ContainerDescription = styled.div`
+  display: flex;
+
+  @media (max-width: 880px) {
+    margin-top: -20vh;
+  }
+
+  @media (max-width: 800px) {
+    margin-top: -30vh;
+  }
+
+  @media (max-width: 660px) {
+    margin-top: -40vh;
+  }
+
+  @media (max-width: 545px) {
+    margin-top: -52vh;
+  }
+
+  @media (max-width: 450px) {
+    margin-top: -60vh;
+  }
+`
+
 const StyledBackgroundImage = styled.div`
   background: #475b74;
   width: 40%;
@@ -22,10 +46,6 @@ const StyledSelfImage = styled.div`
   z-index: 1;
   margin-top: 20px;
   margin-left: 25px;
-`
-
-const ContainerDescription = styled.div`
-  display: flex;
 `
 
 const StyledContainerDescription = styled.div`
@@ -89,9 +109,9 @@ const AboutMe = () => {
           Com um perfil investigativo, rápido aprendizado e grande interesse por novos
           conhecimentos, foco no uso da tecnologia para desenvolvimento de soluções práticas e
           criativas para resolução de problemas. Sou um desenvolvedor apaixonado em busca de grande
-          equipe para construir aplicativos e páginas da Web juntos. Estou sempre ansioso ansioso
-          para aprender novas tecnologias e superar desafios. Com disponibilidade para trabalhar e
-          se mudar, se for necessário, em uma oportunidade presencial ou remota.
+          equipe para construir aplicativos e páginas da Web juntos. Estou sempre ansioso para
+          aprender novas tecnologias e superar desafios. Com disponibilidade para trabalhar de forma
+          presencial ou remota independente do lugar.
         </StyledDescriptionText>
         <StyledContainerIcons>
           <StyledLineIcons>
