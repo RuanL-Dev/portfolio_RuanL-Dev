@@ -10,7 +10,7 @@ import H4 from '../../../typograph/H4Text'
 const ContainerDescription = styled.div`
   display: flex;
 
-  @media (max-width: 430px) {
+  @media (max-width: 425px) {
     padding-top: 10vh;
   }
   @media (max-width: 880px) {
@@ -102,7 +102,7 @@ const AboutMe = () => {
             conhecimentos, foco no uso da tecnologia para desenvolvimento de soluções práticas e
             criativas para resolução de problemas. Sou um desenvolvedor apaixonado em busca de
             grande grande equipe para construir aplicativos e páginas da Web juntos. Estou sempre
-            ansioso aprender novas tecnologias e superar desafios. Com disponibilidade para
+            ansioso para aprender novas tecnologias e superar desafios. Com disponibilidade para
             trabalhar de forma presencial ou remota independente do lugar.
           </H4>
         </StyledDescriptionText>

@@ -6,7 +6,7 @@ const H3 = styled.h3`
   line-height: 19px;
 
   @media (max-width: 425px) {
-    font-size: 25px;
+    font-size: 28px;
     line-height: 35px;
   }
 `

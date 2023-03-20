@@ -42,7 +42,8 @@ const StyledSlogan = styled.p`
   }
 
   @media (max-width: 425px) {
-    font-size: 40px;
+    font-size: 55px;
+    line-height: 50px;
   }
 `
 const StyledColor = styled.span`

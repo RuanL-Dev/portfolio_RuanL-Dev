@@ -53,6 +53,14 @@ const StyledButton = styled.button`
   :hover:after {
     transform: scaleX(1);
   }
+
+  @media (max-width: 425px) {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    padding: 20px;
+    width: 300px;
+  }
 `
 
 // eslint-disable-next-line no-unused-vars
