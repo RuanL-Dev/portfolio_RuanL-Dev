@@ -129,7 +129,7 @@ const AboutMe = () => {
           <StyledLineIcons>
             <IconImage imageName="StyledComponents" type="svg" />
           </StyledLineIcons>
-          <Button link="https://drive.google.com/file/d/19l9GeXImbxBHmq_bdcXwVB4HEEj-_9qc/view?usp=drivesdk">
+          <Button link="https://drive.google.com/file/d/1P6oykFFvjPTD_m_sLG3q3zS3c7Z8SWvb/view?usp=share_link">
             Download CV
           </Button>
         </StyledContainerIcons>
