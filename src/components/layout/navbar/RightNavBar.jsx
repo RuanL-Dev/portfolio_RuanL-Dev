@@ -42,7 +42,7 @@ const StyledUl = styled.ul`
     transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
     top: 0;
     right: 0;
-    height: 90vh;
+    height: 78vh;
     width: 400px;
     gap: 60px;
     font-size: 60px;
