@@ -26,8 +26,8 @@ const Container = styled.div`
   }
 `
 
-const StyledSlogan = styled.p`
-  font-family: 'Ubuntu';
+const StyledSlogan = styled.div`
+  font-family: 'Ubuntu', sans-serif;
   color: ${(props) => props.theme.colors.text};
   width: 400;
   font-weight: 700;
@@ -49,6 +49,7 @@ const StyledSlogan = styled.p`
 `
 const StyledColor = styled.span`
   color: #7f1ae3;
+  font-family: cursive, sans-serif;
 `
 
 export default function Slogan() {
