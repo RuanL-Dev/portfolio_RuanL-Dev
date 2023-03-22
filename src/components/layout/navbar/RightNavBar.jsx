@@ -39,6 +39,7 @@ const StyledUl = styled.ul`
     position: fixed;
     backdrop-filter: blur(14px);
     opacity: 0.8;
+    z-index: 10;
     transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
     top: 0;
     right: 0;
